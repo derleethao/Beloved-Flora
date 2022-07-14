@@ -1,12 +1,54 @@
 /* font-family: 'Playfair Display', serif;
 font-family: 'Poppins', sans-serif; */
 
+:root {
+  --primary-color: #c8d9eb;
+  --secondary-color: #f0d9da;
+  --heading-font: "Playfair Display", serif;
+  --default-font: "Poppins", sans-serif;
+}
+
 h1 {
-  font-family: "Playfair Display", serif;
+  font-family: var(--heading-font);
   font-weight: bold;
 }
 
 p {
-  font-family: "Poppins", sans-serif;
-  font-weight: normal;
+  font-family: var(--default-font);
+  font-weight: lighter;
+}
+
+.announcement-bar {
+  background-color: var(--primary-color);
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  display: block;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 0.5px;
+}
+
+.homepage-intro {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 15px;
+}
+
+.container-fluid {
+  font-family: var(--default-font);
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+.btn-homepage {
+  background: var(--secondary-color);
+  border-radius: 4px;
+  color: white;
+  font-family: var(--default-font);
+  font-weight: lighter;
+  font-size: 12px;
+  line-height: 27px;
+  padding: 8px 10px;
+  text-decoration: none;
 }
