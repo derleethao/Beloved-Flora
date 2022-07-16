@@ -2,8 +2,8 @@
 font-family: 'Poppins', sans-serif; */
 
 :root {
-  --primary-color: #c8d9eb;
-  --secondary-color: #f0d9da;
+  --primary-color: #d3b4a3;
+  --secondary-color: #714b3e;
   --heading-font: "Playfair Display", serif;
   --default-font: "Poppins", sans-serif;
 }
@@ -16,6 +16,13 @@ h1 {
 p {
   font-family: var(--default-font);
   font-weight: lighter;
+}
+
+hr {
+  width: 80px;
+  background: var(--secondary-color);
+  height: 6px;
+  border: none;
 }
 
 .announcement-bar {
@@ -43,7 +50,6 @@ p {
 
 .btn-homepage {
   background: var(--secondary-color);
-  border-radius: 4px;
   color: white;
   font-family: var(--default-font);
   font-weight: lighter;
@@ -51,4 +57,32 @@ p {
   line-height: 27px;
   padding: 8px 10px;
   text-decoration: none;
+}
+
+.wedding-homepage {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.event-homepage {
+  max-width: 100%;
+  height: auto;
+}
+
+.studio-homepage {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.service-description {
+  padding: 140px 40px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+  .service-description {
+    padding: 0;
+  }
 }
