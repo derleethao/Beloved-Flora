@@ -18,7 +18,7 @@ p {
   font-weight: lighter;
 }
 
-hr {
+.hr-homepage {
   width: 80px;
   background: var(--secondary-color);
   height: 6px;
@@ -36,38 +36,37 @@ hr {
   padding-bottom: 0.5px;
 }
 
-.homepage-intro {
-  background: var(--primary-color);
-  color: #fff;
-  padding: 15px;
-}
-
 .container-fluid {
   font-family: var(--default-font);
   font-weight: lighter;
   font-size: 12px;
 }
 
-.btn-homepage {
-  background: var(--secondary-color);
-  color: white;
+.button {
+  background-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
   font-family: var(--default-font);
   font-weight: lighter;
   font-size: 12px;
   line-height: 27px;
-  padding: 8px 10px;
+  padding: 10px 25px;
   text-decoration: none;
+}
+
+.banner {
+  color: #fff;
+  padding: 15px;
+  background-image: url(/images/banner.jpeg);
+  background-size: cover;
 }
 
 .wedding-homepage {
   max-width: 100%;
   height: auto;
   margin-top: 10px;
-}
-
-.event-homepage {
-  max-width: 100%;
-  height: auto;
 }
 
 .studio-homepage {
@@ -81,8 +80,36 @@ hr {
   margin: 0 auto;
 }
 
+.about-title {
+  text-align: center;
+  padding: 40px;
+}
+
+.about-page {
+  background-color: var(--primary-color);
+}
+
+.about-section {
+  background-color: #E6E3DB;
+  margin: 70px 90px;
+}
+
+.about-me-info {
+  padding: 140px 40px;
+  margin: 0 auto;
+}
+
 @media (max-width: 1000px) {
   .service-description {
     padding: 0;
+  }
+
+  .about-me-info {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .about-title {
+    padding: 10px;
   }
 }
