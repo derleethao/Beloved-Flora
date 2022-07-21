@@ -18,6 +18,11 @@ p {
   font-weight: lighter;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .hr-homepage {
   width: 80px;
   background: var(--secondary-color);
@@ -64,14 +69,10 @@ p {
 }
 
 .wedding-homepage {
-  max-width: 100%;
-  height: auto;
   margin-top: 10px;
 }
 
 .studio-homepage {
-  max-width: 100%;
-  height: auto;
   margin-bottom: 10px;
 }
 
@@ -80,9 +81,9 @@ p {
   margin: 0 auto;
 }
 
-.about-title {
+.about-section h1 {
   text-align: center;
-  padding: 40px;
+  margin-bottom: 40px;
 }
 
 .about-page {
@@ -92,11 +93,30 @@ p {
 .about-section {
   background-color: #e6e3db;
   margin: 70px 90px;
+  padding: 40px;
 }
 
 .about-me-info {
   padding: 140px 40px;
   margin: 0 auto;
+}
+
+.row-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column-gallery {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column-gallery img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
 
 @media (max-width: 1000px) {
@@ -105,11 +125,20 @@ p {
   }
 
   .about-me-info {
-    padding: 10px;
+    padding: 0px;
     text-align: center;
   }
 
-  .about-title {
+  .about-section h1 {
+    margin-bottom: 10px;
+  }
+
+  .about-section {
     padding: 10px;
+  }
+
+   .column-gallery {
+    flex: 100%;
+    max-width: 100%;
   }
 }
