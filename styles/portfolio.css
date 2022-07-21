@@ -23,6 +23,26 @@ img {
   height: auto;
 }
 
+form {
+  font-family: var(--default-font);
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+label {
+  display: block;
+}
+
+.color-background {
+  background-color: var(--primary-color);
+}
+
+.color-section {
+  background-color: #e6e3db;
+  margin: 70px 90px;
+  padding: 40px;
+}
+
 .hr-homepage {
   width: 80px;
   background: var(--secondary-color);
@@ -81,19 +101,9 @@ img {
   margin: 0 auto;
 }
 
-.about-section h1 {
+.color-section h1 {
   text-align: center;
   margin-bottom: 40px;
-}
-
-.about-page {
-  background-color: var(--primary-color);
-}
-
-.about-section {
-  background-color: #e6e3db;
-  margin: 70px 90px;
-  padding: 40px;
 }
 
 .about-me-info {
@@ -130,11 +140,11 @@ img {
     text-align: center;
   }
 
-  .about-section h1 {
+  .color-section h1 {
     margin-bottom: 10px;
   }
 
-  .about-section {
+  .color-section {
     padding: 10px;
   }
 
